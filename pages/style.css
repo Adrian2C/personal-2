@@ -43,6 +43,7 @@ body {
     rgba(43, 0, 57, 1) 51%,
     rgba(61, 0, 82, 1) 99%
   );
+  margin: 0 3rem;
 }
 
 img {
@@ -176,6 +177,12 @@ button {
   width: 450px;
   height: 630px;
 }
+  .foto{
+    display: block;
+  }
+  .foto2 {
+    display: none;
+  }
 /* SKILLS */
 .section__title {
   margin-top: -20px;
@@ -261,7 +268,6 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
-
 .contact__text {
   margin: 70px auto;
   width: 400px;
@@ -271,18 +277,15 @@ button {
   font-weight: var(--3);
   font-size: 1.5625rem;
 }
-
 /* Form */
 .contact-form {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
-
 .form-group {
   margin-bottom: 30px;
 }
-
 .form-label {
   display: inline-block;
   width: 100px;
@@ -309,9 +312,9 @@ i.uil.uil-comment-edit {
 }
 
 /* footer */
-.footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+.footer{
+  display: flex;
+  flex-direction: row;
   padding: 10px 0;
 }
 .footer p {
@@ -322,7 +325,7 @@ i.uil.uil-comment-edit {
 }
 /* responsiveness */
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   body {
     margin: 0 5em;
   }
@@ -331,10 +334,21 @@ i.uil.uil-comment-edit {
     flex-direction: column;
     margin-bottom: 2rem;
   }
-  .profile {
+  .main__container {
+    order: 2;
     width: 100%;
-    text-align: center;
-    height: auto;
+  }
+  .profile {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+  }
+  .foto{
+    display: none;
+  }
+  .foto2 {
+    display: block;
   }
   .contact__text {
     margin: 70px auto;
@@ -357,12 +371,14 @@ i.uil.uil-comment-edit {
   }
   .footer {
     display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    padding: 10px 0;
   }
   .f__enlaces {
-    margin-top: 0px;
+    margin-top: 10px;
   }
 }
-
 @media (max-width: 425px) {
   body {
     margin: 0 2em;
@@ -371,7 +387,7 @@ i.uil.uil-comment-edit {
     padding: 0px;
   }
   .enlaces {
-    justify-content: flex-end;
+    justify-content: space-around;
   }
   #main {
     margin-top: 0;
@@ -402,19 +418,13 @@ i.uil.uil-comment-edit {
   .grid {
     margin-left: 0px;
     grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   .mask ul li {
     margin-top: 1em;
   }
-  /*  .boxes__text h2 {
-    
-  } */
   .boxes__text h2 {
-    /* font-size: 40px; */
-    /*  font-weight: var(--4); */
     padding-left: 0em;
-    /*  margin-left:0em; */
     text-align: center;
   }
   .boxes__text p {
@@ -436,15 +446,10 @@ i.uil.uil-comment-edit {
   .form-label {
     padding-bottom: 10px;
   }
-  .footer {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    line-height: 20px;
+  .form-input {
+    width: 100%;
   }
-  .footer p {
-    text-align: center;
+  .form-input-container {
+    display: inline;
   }
 }
