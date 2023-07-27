@@ -7,7 +7,6 @@
   --color4: #f11271;
   --color5: #c16fff;
 
-  --1: 100;
   --2: 300;
   --3: 400;
   --4: 700;
@@ -78,7 +77,7 @@ button {
   color: #fff6fb;
   padding: 0.75rem 1.4rem;
   border-radius: 0.25rem;
-  font-weight: bold;
+  font-weight: var(--4);
   position: relative;
   z-index: 1;
 }
@@ -231,7 +230,7 @@ button {
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .mask {
   position: absolute;
@@ -242,12 +241,14 @@ button {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;
-  background-color: var(--color2);
+  transition: 0.5s ease;/* 
+  background-color: var(--color2); */
+  background: rgb(22,0,29);
+background: linear-gradient(183deg, rgba(22,0,29,1) 0%, rgba(21,0,110,1) 51%, rgba(148,0,199,1) 99%);
 }
 
 .proyecto__img:hover .mask {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .mask h2 {
@@ -269,13 +270,15 @@ button {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 .contact__text {
-  margin: 70px auto;
-  width: 400px;
-  line-height: 30px;
-  text-align: center;
-  font-style: italic;
-  font-weight: var(--3);
-  font-size: 1.5625rem;
+    display: flex;
+    line-height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-weight: var(--3);
+    font-size: 1.5625rem;
+    background: url(../assets/shape2.png) center/contain no-repeat border-box;
+    align-content: center;
+    flex-wrap: wrap;
 }
 /* Form */
 .contact-form {
@@ -289,7 +292,7 @@ button {
 .form-label {
   display: inline-block;
   width: 100px;
-  font-weight: bold;
+  font-weight: var(--4);
 }
 .form-label,
 .form-input-container {
@@ -350,14 +353,14 @@ i.uil.uil-comment-edit {
   .foto2 {
     display: block;
   }
-  .contact__text {
-    margin: 70px auto;
+.contact__text {
+    padding: 100px 0;
     width: 100%;
     line-height: 30px;
     text-align: center;
     font-style: italic;
     font-size: 25px;
-  }
+}
   .contact-form {
     max-width: 100%;
     margin: 0 auto;
@@ -437,9 +440,8 @@ i.uil.uil-comment-edit {
   }
   .contact__text {
     margin: 50px 0px;
-    width: auto;
     font-size: 20px;
-  }
+}
   .contact-form {
     padding: 0px;
   }
