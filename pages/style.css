@@ -6,10 +6,9 @@
   --color3: #e4e4e4;
   --color4: #f11271;
   --color5: #c16fff;
-
-  --2: 300;
-  --3: 400;
-  --4: 700;
+  --light: 300;
+  --medium: 400;
+  --heavy: 700;
 }
 
 /* Main */
@@ -49,7 +48,10 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+#mainImage {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
 .section {
   max-width: 1240px;
   margin: auto;
@@ -77,7 +79,7 @@ button {
   color: #fff6fb;
   padding: 0.75rem 1.4rem;
   border-radius: 0.25rem;
-  font-weight: var(--4);
+  font-weight: var(--heavy);
   position: relative;
   z-index: 1;
 }
@@ -156,7 +158,7 @@ button {
   width: 500px;
   line-height: 30px;
   font-size: 23px;
-  font-weight: var(--2);
+  font-weight: var(--light);
   margin: 50px 0px;
 }
 .myName:hover,
@@ -176,12 +178,12 @@ button {
   width: 450px;
   height: 630px;
 }
-  .foto{
-    display: block;
-  }
-  .foto2 {
-    display: none;
-  }
+.foto {
+  display: block;
+}
+.foto2 {
+  display: none;
+}
 /* SKILLS */
 .section__title {
   margin-top: -20px;
@@ -207,11 +209,11 @@ button {
 }
 .boxes__text h2 {
   font-size: 50px;
-  font-weight: var(--4);
+  font-weight: var(--heavy);
   padding-left: 1.5em;
 }
 .boxes__text p {
-  font-weight: var(--2);
+  font-weight: var(--light);
   margin-left: 80px;
 }
 .front:hover {
@@ -241,10 +243,15 @@ button {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 0.5s ease;/* 
+  transition: 0.5s ease; /* 
   background-color: var(--color2); */
-  background: rgb(22,0,29);
-background: linear-gradient(183deg, rgba(22,0,29,1) 0%, rgba(21,0,110,1) 51%, rgba(148,0,199,1) 99%);
+  background: rgb(22, 0, 29);
+  background: linear-gradient(
+    183deg,
+    rgba(22, 0, 29, 1) 0%,
+    rgba(21, 0, 110, 1) 51%,
+    rgba(148, 0, 199, 1) 99%
+  );
 }
 
 .proyecto__img:hover .mask {
@@ -254,14 +261,24 @@ background: linear-gradient(183deg, rgba(22,0,29,1) 0%, rgba(21,0,110,1) 51%, rg
 .mask h2 {
   margin-top: 1em;
   font-size: 2em;
+  font-weight: var(--heavy);
   text-align: center;
+  border-bottom: 1px solid;
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+.mask h2:hover,
+.mask h2:hover a {
+  color: var(--color4);
 }
 .mask ul li {
   display: flex;
   justify-content: center;
   font-size: 1.5em;
-  margin-top: 3em;
+  /*   margin-top: 3em; */
+  padding-top: 2rem;
 }
+
 /* Contact */
 
 .contact__container {
@@ -270,15 +287,15 @@ background: linear-gradient(183deg, rgba(22,0,29,1) 0%, rgba(21,0,110,1) 51%, rg
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 .contact__text {
-    display: flex;
-    line-height: 30px;
-    text-align: center;
-    font-style: italic;
-    font-weight: var(--3);
-    font-size: 1.5625rem;
-    background: url(../assets/shape2.png) center/contain no-repeat border-box;
-    align-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  line-height: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: var(--medium);
+  font-size: 1.5625rem;
+  background: url(../assets/shape2.png) center/contain no-repeat border-box;
+  align-content: center;
+  flex-wrap: wrap;
 }
 /* Form */
 .contact-form {
@@ -292,7 +309,7 @@ background: linear-gradient(183deg, rgba(22,0,29,1) 0%, rgba(21,0,110,1) 51%, rg
 .form-label {
   display: inline-block;
   width: 100px;
-  font-weight: var(--4);
+  font-weight: var(--heavy);
 }
 .form-label,
 .form-input-container {
@@ -315,7 +332,7 @@ i.uil.uil-comment-edit {
 }
 
 /* footer */
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   padding: 10px 0;
@@ -347,20 +364,20 @@ i.uil.uil-comment-edit {
     height: 300px;
     margin: auto;
   }
-  .foto{
+  .foto {
     display: none;
   }
   .foto2 {
     display: block;
   }
-.contact__text {
+  .contact__text {
     padding: 100px 0;
     width: 100%;
     line-height: 30px;
     text-align: center;
     font-style: italic;
     font-size: 25px;
-}
+  }
   .contact-form {
     max-width: 100%;
     margin: 0 auto;
@@ -423,6 +440,7 @@ i.uil.uil-comment-edit {
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
+
   .mask ul li {
     margin-top: 1em;
   }
@@ -441,7 +459,7 @@ i.uil.uil-comment-edit {
   .contact__text {
     margin: 50px 0px;
     font-size: 20px;
-}
+  }
   .contact-form {
     padding: 0px;
   }
