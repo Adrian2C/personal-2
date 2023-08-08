@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Desarrollador y Disenador web argentino. Front end / Ux Designer">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./pages/reset.css">
     <link rel="stylesheet" href="./pages/style.css">
-
-    <title>My Web</title>
+    <title>Adrian Coceres Web Design</title>
 </head>
 
 <body>
@@ -22,7 +22,7 @@
             </div>
             <div class="enlaces">
                 <a href="https://github.com/Adrian2C"><i class="uil uil-github" alt="github"></i></a>
-                <a href="#proyectos"><i class="uil uil-arrow" alt="mis proyectos"></i></a>
+                <a href="#proyects"><i class="uil uil-arrow" alt="mis proyectos"></i></a>
                 <a href="https://www.linkedin.com/in/adriancoceres/"><i class="uil uil-linkedin" alt="linkedin"></i></a>
                 <a href="https://www.instagram.com/adrianc.wd"><i class="uil uil-instagram" alt="instagram"></i></a>
             </div>
@@ -33,17 +33,15 @@
         <div class="main__container">
             <h1>Bienvenido a ACWD
                 Soy <span class="myName">Adrian Coceres</span></h1>
-            <p>De Argentina, Desarrollador y Diseñador web Front-End dedicado a la creacion de paginas y aplicaciones
+            <p>Desarrollador y Diseñador web Front-End dedicado a la creacion de paginas y aplicaciones
                 webs
                 que amaran
                 todos los usuarios</p>
             <button class="btn"><a href="#contact">Contactame!</a></button>
         </div>
         <div class="profile">
-            <img src="./assets/shape.png" alt="foto mia" class="foto2">
-   
-            <img src="./assets/perfil1.png" alt="foto mia" class="foto">
-            
+
+            <img src="./assets/fondo.webp" alt="foto tech guy" class="foto">
         </div>
     </main>
     <hr>
@@ -114,7 +112,7 @@
         <div class="proyecto grid">
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 1.png" alt="Tienda E-commerce Rvrs Sport" class="image">
+                <img src="./assets/proyecto 1.webp" alt="Tienda E-commerce Rvrs Sport" class="image">
                 <div class="mask">
                     <h2 class="text"><a href="https://www.rvrssport.com.ar/?ref=admin_header">RVRS Sport</a></h2>
                     <ul>
@@ -127,9 +125,11 @@
             </div>
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 2.png" alt="foto proyecto 1" class="image">
+                <img src="./assets/proyecto 2.webp" alt="foto proyecto 1" class="image">
                 <div class="mask">
-                    <h2 class="text"><a href="https://adrian2c.github.io/portfolio/">Portfolio Personal #1</a></h2>
+                    <h2 class="text">
+                        <a href="https://adrian2c.github.io/portfolio/">Portfolio Personal #1</a>
+                    </h2>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -139,7 +139,7 @@
             </div>
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 3.png" alt="foto proyecto 1" class="image">
+                <img src="./assets/proyecto 3.webp" alt="foto proyecto 1" class="image">
                 <div class="mask">
                     <h2 class="text"><a href="https://adrian2c.github.io/blog-webdeb1/">Diseño Front de blog</a></h2>
                     <ul>
@@ -150,9 +150,10 @@
             </div>
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 4.png" alt="foto proyecto 1" class="image">
+                <img src="./assets/proyecto 4.webp" alt="foto proyecto 1" class="image">
                 <div class="mask">
-                    <h2 class="text"><a href="https://adrian2c.github.io/Proyecto-final-BAM2.0/">Pasteleria Dulces Momentos</a></h2>
+                    <h2 class="text"><a href="https://adrian2c.github.io/Proyecto-final-BAM2.0/">Pasteleria Dulces
+                            Momentos</a></h2>
                     <ul>
                         <li>HTML/Css</li>
                         <li>javascript</li>
@@ -163,9 +164,10 @@
             </div>
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 5.png" alt="foto proyecto 1" class="image">
+                <img src="./assets/proyecto 5.webp" alt="foto proyecto 1" class="image">
                 <div class="mask">
-                    <h2 class="text"><a href="https://adrian2c.github.io/Tarea-4-grupo-1/index.html">Nombre</a></h2>
+                    <h2 class="text"><a href="https://adrian2c.github.io/Tarea-4-grupo-1/index.html">Estudio Contable
+                            Integral</a></h2>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
@@ -175,7 +177,7 @@
             </div>
 
             <div class="proyecto__img">
-                <img src="./assets/proyecto 6.png" alt="foto proyecto 1" class="image">
+                <img src="./assets/proyecto 6.webp" alt="foto proyecto 1" class="image">
                 <div class="mask">
                     <h2 class="text"><a href="https://adrian2c.github.io/portfolio-demo/">Portfolio front end </a></h2>
                     <ul>
@@ -199,48 +201,46 @@
                     pondre en
                     contacto tan pronto como sea posible"</p>
             </div>
-            <div class="contact-form">
-                <form action="./pages/mail.php" method="POST" enctype="multipart/form-data" class="contact__form">
+            <div class="contact-form" id="contact-form">
+                <form action="./pages/mail.php" method="POST" id="contactForm" class="contact__form">
                     <div class="form-group">
-                        <label class="form-label" for="name">Nombre</label>
-                        <input type="text" id="name" class="form-input" autocomplete="off" required>
+                        <label class="form-label" for="name">Nombre:</label>
+                        <input type="text" name="name" id="name" class="form-input" autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="email">Email</label>
-                        <input autocomplete="off" name="email" type="email" class="form-input" required>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" name="email" id="email" class="form-input" autocomplete="off" required>
                     </div>
                     <div class="form-group">
-                        <label class="form-label" for="email">Telefono</label>
-                        <input autocomplete="off" name="phone" type="tel" class="form-input">
+                        <label for="subject" class="form-label">Telefono:</label>
+                        <input type="number" name="subject" id="subject" class="form-input">
                     </div>
-
                     <div class="form-group">
-                        <label class="form-label" for="message">Mensaje</label>
+                        <label for="message" class="form-label">Mensaje</label>
                         <div class="form-input-container">
-                            <textarea id="message" class="form-input" rows="5" autocomplete="off" required></textarea>
+                            <textarea name="message" cols="30" rows="10" class="form-input" autocomplete="off"
+                                required></textarea>
                         </div>
                     </div>
                     <div class="button">
-                        <button type="submit" class="btn send" value="send">Enviar<i
+                        <button type="submit" id="btn" class="btn send" value="Send" name="enviar">Enviar<i
                                 class="uil uil-message"></i></button>
                     </div>
                 </form>
             </div>
+        </div>
     </section>
     <hr>
     <footer class="footer">
         <p>Adrian Coceres</p>
-        <p>Hecho con Cariño cada Pixel &copy; 2023</p>
+        <p>Hecho a mano cada Pixel &copy; 2023</p>
         <div class="enlaces f__enlaces">
             <a href="https://github.com/Adrian2C"><i class="uil uil-github"></i></a>
             <a href="#proyectos"><i class="uil uil-arrow"></i></a>
-            <a href="#"><i class="uil uil-linkedin"></i></a>
-            <a href="#"><i class="uil uil-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/adriancoceres/"><i class="uil uil-linkedin"></i></a>
+            <a href="https://www.instagram.com/adrianc.wd"><i class="uil uil-instagram"></i></a>
         </div>
-
     </footer>
-    <script src="./pages/validate.js"></script>
-    <script src="./pages/script.js"></script>
 </body>
 
 </html>
