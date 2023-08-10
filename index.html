@@ -13,37 +13,87 @@
 </head>
 
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./assets/acwd.png" alt="logotipo" class="logoImg">
-                </a>
-            </div>
-            <div class="enlaces">
-                <a href="https://github.com/Adrian2C"><i class="uil uil-github" alt="github"></i></a>
+    <header class="navbar">
+        <!-- <nav class="navbar"> -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/acwd.png" alt="logotipo" class="logoImg">
+            </a>
+        </div>
+        <nav class="enlaces">
+            <ul class="enlaces__list    ">
+                <!-- <ul class="enlaces">     -->
+                <li><a href="#">ABOUT</a>
+                <li><a href="#">SKILLS</a>
+                <li><a href="#">PROYECTS</a>
+                <li><a href="#">CONTACT</a>
+                    <!-- <a href="https://github.com/Adrian2C"><i class="uil uil-github"></i></a>
                 <a href="#proyects"><i class="uil uil-arrow" alt="mis proyectos"></i></a>
                 <a href="https://www.linkedin.com/in/adriancoceres/"><i class="uil uil-linkedin" alt="linkedin"></i></a>
-                <a href="https://www.instagram.com/adrianc.wd"><i class="uil uil-instagram" alt="instagram"></i></a>
-            </div>
+                <a href="https://www.instagram.com/adrianc.wd"><i class="uil uil-instagram" alt="instagram"></i></a> -->
+            </ul>
         </nav>
+        <!--  </nav> -->
     </header>
 
     <main id="main">
+        <div class="profile">
+            <!-- <img src="./assets/fondo.webp" alt="foto tech guy" class="foto"> -->
+        </div>
         <div class="main__container">
             <h1>Bienvenido a ACWD
                 Soy <span class="myName">Adrian Coceres</span></h1>
-            <p>Desarrollador y Diseñador web Front-End dedicado a la creacion de paginas y aplicaciones
-                webs
-                que amaran
-                todos los usuarios</p>
-            <button class="btn"><a href="#contact">Contactame!</a></button>
+            <p>Diseñador UX, y Desarrollador Web Front-End Jr
+                dedicado a la sitios y aplicaciones web responsivas
+                y amigables</p>
+            <div class="button-contact">
+                <button class="btn"><a href="#contact">Contactame!</a></button>
+                <button class="btn"><a href="#">Mi CV</a></button>
+            </div>
         </div>
-        <div class="profile">
 
-            <img src="./assets/fondo.webp" alt="foto tech guy" class="foto">
+
+
+        <div class="circleMenu">
+            <div class="menu">
+                <input type="checkbox" class="toggle" id="menu">
+                <label for="menu" class="menu-icon">
+                    <i class="uil uil-arrow"></i>
+                </label>
+                <!-- <a href="https://github.com/Adrian2C"><i class="uil uil-github">Github</i></a> -->
+                <a href="https://github.com/Adrian2C" class="icon"><i class="uil uil-github">Github</i></a>
+                <a href="https://www.linkedin.com/in/adriancoceres/" class="icon"><i
+                        class="uil uil-linkedin">linkedIn</i></a>
+                <a href="https://www.instagram.com/adrianc.wd" class="icon"><i class="uil uil-instagram">enlace</i></a>
+                <a href="#" class="icon"><i class="uil uil-arrow">Contacto</i></a>
+                <a href="#" class="icon"><i class="uil uil-arrow">enlace</i></a>
+
+                <a href="#" class="icon"><i class="uil uil-arrow">enlace</i></a>
+            </div>
         </div>
     </main>
+    <hr>
+    <section id="skills" class="section">
+        <h3 class="section__title">About Me</h3>
+        <div class="about">
+            <p>Mi Nombre es Adrian Coceres, Soy desarrollador web Freelance desde hace 2 años
+                <br>
+                Amanrte de la tecnologia, la musica y el arte.
+                <br>
+                Me gusta mucho mantenerme en constante aprendizaje, aprendiendo nuevas tecnologias, y manteniendome
+                actualizado con las
+                ultimas noticias del mundo Tech
+                <br>
+                Estudie Desarrollador web en la universidad tecnologica de buenos aires (UTN), y me encuentro estudiando
+                Diseñador de
+                Experiencia de usuario (UX), en Google
+                <br>
+                Si estás buscando profesionalidad y dedicación, ¡cuenta conmigo!
+            </p>
+        </div>
+
+    </section>
+
     <hr>
     <section id="skills" class="section">
         <h3 class="section__title">Habilidades</h3>
@@ -241,6 +291,7 @@
             <a href="https://www.instagram.com/adrianc.wd"><i class="uil uil-instagram"></i></a>
         </div>
     </footer>
+    <script src="./pages/script.js"></script>
 </body>
 
 </html>
