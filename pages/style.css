@@ -211,21 +211,25 @@ button {
   transform: translate(-50%, -50%) scale(1);
 }
 .menu > .toggle:checked ~ .icon:nth-last-of-type(1) {
+  /* codigo para github */
   top: -7.625rem;
   left: 0;
   transition-delay: 0s;
 }
 .menu > .toggle:checked ~ .icon:nth-last-of-type(2) {
+  /* codigo para linein */
   top: -4.625rem;
   left: 7.5rem;
   transition-delay: 0.125s;
 }
 .menu > .toggle:checked ~ .icon:nth-last-of-type(3) {
+  /* codigo para instagram */
   top: 3.5rem;
   left: 7.1875rem;
   transition-delay: 0.25s;
 }
 .menu > .toggle:checked ~ .icon:nth-last-of-type(4) {
+  /* codigo para mail */
   top: 7.625rem;
   left: 0;
   transition-delay: 0.373s;
@@ -240,16 +244,16 @@ button {
   left: -7.5rem;
   transition-delay: 0.625s;
 }
-.menu > .toggle:checked ~ .icon:nth-last-of-type(7) {
+/* .menu > .toggle:checked ~ .icon:nth-last-of-type(7) {
   top: 0rem;
   left: -8.3125rem;
   transition-delay: 0.75s;
-}
-.menu > .toggle:checked ~ .icon:nth-last-of-type(8) {
+} */
+/* .menu > .toggle:checked ~ .icon:nth-last-of-type(8) {
   top: -5.875rem;
   left: -5.875rem;
   transition-delay: 0.875s;
-}
+} */
 
 /* NavBar */
 .navbar {
@@ -291,7 +295,7 @@ button {
   padding: 0px 10px;
 }
 .enlaces__list li:hover {
-  border-bottom: 1px dashed #fd3084;
+  border-bottom: 1px solid #fd3084;
 }
 
 /* main */
