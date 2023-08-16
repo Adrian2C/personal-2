@@ -1,3 +1,22 @@
+const inputs = document.querySelectorAll(".input");
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+/* 
 var j = 0;
 let i = document.getElementById("menu").childNodes;
 let expan = document.querySelector(".container");
@@ -26,12 +45,4 @@ function expand() {
     j = 0;
   }
 }
-
-/* 
-function openNav() {
-  document.getElementById("mobile-menu").style.width = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mobile-menu").style.width = "0%";
-} */
+ */
