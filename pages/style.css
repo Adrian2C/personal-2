@@ -231,7 +231,7 @@ button {
   padding: 0px 10px;
 }
 .enlaces__list li:hover {
-  border-bottom: 1px solid #fd3084;
+  border-bottom: 3px solid var(--color4);
 }
 /* main */
 #main {
@@ -344,8 +344,23 @@ button {
 .design:hover {
   color: #ea16f1;
 }
-/* portfolio */
-.proyecto__img {
+/* -----------=====portfolio=====-------- */
+.proyecto__img{
+  border:1px solid silver;
+  border-radius: 40px;
+  text-align: center;
+}
+.proyecto__img img{
+  width:100%;
+  /* height:100%; */
+  border-radius: 35px;
+  padding:10px;
+}
+.mask__img{
+ /*  width:50px; */
+/*   height:10px; */border:1px solid red;
+}
+/* .proyecto__img {
   position: relative;
 }
 .image {
@@ -394,7 +409,7 @@ button {
   justify-content: center;
   font-size: 1.5em;
   padding-top: 2rem;
-}
+} */
 
 /*--------------========= Contact =========-------------- */
 .contact-container {
@@ -717,7 +732,7 @@ textarea.input {
     width: auto;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   body {
     margin-left: 0.5em;
   }
@@ -736,6 +751,7 @@ textarea.input {
     margin-top: 0;
     margin-bottom: 3rem;
     text-align: center;
+    height:100vh;
   }
   .main__container {
     width: auto;
@@ -747,7 +763,7 @@ textarea.input {
     margin: 10px 0;
   }
   .button-contact .btn:first-child {
-    margin-right: 0px;
+    margin-right: 2rem;
   }
   .circleMenu {
     position: fixed;
@@ -827,5 +843,10 @@ textarea.input {
   }
   .btn {
     padding: 0.45rem 1.2rem;
+  }
+}
+@media (max-width: 350px) {
+  .button-contact .btn:first-child {
+    margin-right: 0px;
   }
 }
