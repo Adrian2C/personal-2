@@ -5,6 +5,10 @@ $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
+  if (!preg_match('/^[0-9]+$/', $subject)) {
+        die("Por favor, inserte solo numeros");
+    }
+
 $mailheader = "From:".$name."<".$email.">\r\n";
 
 $recipient = "adriancoceres.93@gmail.com";

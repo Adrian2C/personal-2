@@ -603,7 +603,7 @@ textarea.input {
   position: relative;
 }
 .container__background {
-  background: url("../assets/fondo1.png") center center/contain no-repeat;
+  background: url("../assets/fondo1.webp") center center/contain no-repeat;
   position: absolute;
   top: 0;
   left: 0;
