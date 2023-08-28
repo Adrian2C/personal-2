@@ -310,6 +310,22 @@ button {
   font-size: 32px;
   color: var(--color5);
 }
+.section__title span{
+  padding:0 10px;
+}
+.span__about {
+background-color: #1f0028;
+}
+.span__skills {
+background-color: #240030;
+}
+.span__proy {
+background-color: #2b0039;
+}
+.span__contact {
+background-color: #370049;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
