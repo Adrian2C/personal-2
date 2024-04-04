@@ -234,7 +234,7 @@
     </section>
     <hr>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section contact">
         <h3 class="section__title"><span class="span__contact">Contactame</span></h3>
 
         <div class="contact-container">
@@ -271,8 +271,39 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form">
+                    <form action="#">
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="text" placeholder="Nombre" id="name" class="item" autocomplete="off">
+                                <div class="error-txt">No puede estar vacio</div>
+                            </div>
+                            <div class="input-field field">
+                                <input type="text" placeholder="Email" id="email" class="item" autocomplete="off">
+                                <div class="error-txt email">No puede estar vacio</div>
+                            </div>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="text" placeholder="Numero" id="phone" class="item" autocomplete="off">
+                                <div class="error-txt">No puede estar vacio</div>
+                            </div>
+                            <div class="input-field field">
+                                <input type="text" placeholder="Asunto" id="subject" class="item" autocomplete="off">
+                                <div class="error-txt">No puede estar vacio</div>
+                            </div>
+                        </div>
+                    
+                        <div class="textarea-field field">
+                            <textarea name="" id="message" cols="30" rows="10" placeholder="Tu Mensaje" class="item"
+                                autocomplete="off"></textarea>
+                            <div class="error-txt">No puede estar vacio</div>
+                        </div>
+                    
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <!-- <div class="contact-form">
                     <form action="./pages/mail.php" method="POST" id="contactForm" autocomplete="off">
 
                         <div class="input-container">
@@ -297,7 +328,7 @@
                         </div>
                         <input type="submit" value="Enviar" class="btn send" id="btn" />
                     </form>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -312,6 +343,8 @@
             <a href="https://www.instagram.com/adrianc.wd" target="_blank"><i class="uil uil-instagram"></i></a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./pages/script.js"></script>
 </body>
 
